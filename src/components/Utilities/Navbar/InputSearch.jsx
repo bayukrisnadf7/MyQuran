@@ -1,11 +1,8 @@
+import { CiSearch } from "react-icons/ci";
 const InputSearch = () => {
   return (
-    <div className="flex justify-center">
-      <input
-        type="text"
-        placeholder="Surah apa yang mau dicari ?"
-        className="rounded-lg p-2 w-1/2 mt-2"
-      />
+    <div className="h-8 flex items-center justify-center dark:bg-color-secondary bg-color-primary cursor-pointer rounded-full p-4">
+      <CiSearch className="text-color-tertiary dark:text-color-dark flex justify-center" size={22} />
     </div>
   );
 };

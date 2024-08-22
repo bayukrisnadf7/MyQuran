@@ -5,6 +5,7 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       backgroundImage: {
@@ -19,6 +20,9 @@ module.exports = {
         secondary: "#F2F2F2",
         tertiary: "#F3F7EC",
         quaternary: "#0D7C66",
+        dark: "#232A3C",
+        medium: "#293245",
+        darkPrimary: "#021526"
       }
     }
   },
