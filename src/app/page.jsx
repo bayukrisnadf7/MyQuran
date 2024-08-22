@@ -4,12 +4,12 @@ import { getResponseQuran } from "@/libs/api";
 import QuranSuggestion from "@/components/QuranSuggestion";
 
 const Page = async () => {
-  const quran = await getResponseQuran("surat");
-  const alkahfi = await getResponseQuran("surat/18");
-  const yasin = await getResponseQuran("surat/36");
-  const alwaqia = await getResponseQuran("surat/56");
-  const almulk = await getResponseQuran("surat/67");
-  const arrahman = await getResponseQuran("surat/55");
+  const quran = await getResponseQuran("surah");
+  const alkahfi = await getResponseQuran("surah/18");
+  const yasin = await getResponseQuran("surah/36");
+  const alwaqia = await getResponseQuran("surah/56");
+  const almulk = await getResponseQuran("surah/67");
+  const arrahman = await getResponseQuran("surah/55");
   return (
     <div>
       <Navbar />

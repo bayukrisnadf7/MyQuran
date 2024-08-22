@@ -9,7 +9,7 @@ const ThemesToogle = () => {
   useEffect(() => {
     const theme = localStorage.getItem("theme");
     if (theme === "dark") {
-      setDarkMode(false);
+      setDarkMode(true);
     }
   }, []);
   useEffect(() => {
