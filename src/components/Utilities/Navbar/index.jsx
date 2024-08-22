@@ -1,11 +1,14 @@
 import InputSearch from "./InputSearch";
+import ThemesToogle from "./ThemesToogle";
+
 const Navbar = () => {
   return (
-    <div className="bg-color-primary w-full h-28">
-      <div className="flex flex-col">
-        <h1 className="text-color-tertiary font-bold text-2xl mt-3 text-center">MyQuran</h1>
+    <div className="w-full h-20 dark:bg-color-darkPrimary flex justify-between p-5">
+        <h1 className="text-color-primary dark:text-color-secondary font-bold text-2xl mx-52 text-center">MyQuran</h1>
+        <div className="flex mx-52 gap-5">
         <InputSearch />
-      </div>
+        <ThemesToogle/>
+        </div>
     </div>
   );
 };
