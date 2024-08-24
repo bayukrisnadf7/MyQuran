@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const QuranList = ({ api }) => {
   return (
-    <div className="grid grid-cols-3 mx-24 gap-4 p-4">
+    <div className="grid md:grid-cols-3 grid-cols-1 md:mx-24 gap-4 p-4">
       {api.data?.map((quran) => (
         <Link href={`/surah/${quran.number}`} key={quran.number}>
           <div className="bg-color-tertiary border dark:bg-color-darkPrimary border-color-secondary hover:border-color-primary rounded-lg min-h-28 flex items-center">

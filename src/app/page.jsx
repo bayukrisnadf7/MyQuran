@@ -2,6 +2,7 @@ import QuranList from "@/components/QuranList";
 import Navbar from "@/components/Utilities/Navbar";
 import { getResponseQuran } from "@/libs/api";
 import QuranSuggestion from "@/components/QuranSuggestion";
+import Footer from "@/components/Utilities/Footer";
 
 const Page = async () => {
   const quran = await getResponseQuran("surah");
@@ -13,7 +14,7 @@ const Page = async () => {
   return (
     <div>
       <Navbar />
-      <div className="flex flex-row justify-center mt-5 mb-5 gap-4">
+      <div className="flex flex-wrap justify-center mx-5 md:w-full w-max-md mt-5 mb-5 gap-4">
         <QuranSuggestion api={alkahfi} />
         <QuranSuggestion api={yasin} />
         <QuranSuggestion api={alwaqia} />
@@ -21,6 +22,7 @@ const Page = async () => {
         <QuranSuggestion api={arrahman} />
       </div>
       <QuranList api={quran} />
+      <Footer/>
     </div>
   );
 };
