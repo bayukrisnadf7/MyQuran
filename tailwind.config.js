@@ -22,7 +22,8 @@ module.exports = {
         quaternary: "#0D7C66",
         dark: "#232A3C",
         medium: "#293245",
-        darkPrimary: "#021526"
+        darkPrimary: "#021526",
+        white: "#FFFFFF",
       }
     }
   },
