@@ -6,14 +6,14 @@ const Pagination = ({next, previous, surahPrevious, surahNext}) => {
   return (
     <div className="flex justify-center gap-2 items-center">
       <Link href={previous ? `${previous.data.number}` : "#"}>
-        <FaLongArrowAltLeft />
+        <FaLongArrowAltLeft size={20} />
       </Link>
-      <div className="flex text-color-primary gap-10">
+      <div className="flex text-color-primary gap-10 dark:text-color-tertiary">
         {surahPrevious ? <p>{surahPrevious}</p> : '-'}
         {surahNext ? <p>{surahNext}</p> : '-'}
       </div>
       <Link href={next ? `${next.data.number}` : "#"}>
-        <FaLongArrowAltRight />
+        <FaLongArrowAltRight size={20} />
       </Link>
     </div>
   );
