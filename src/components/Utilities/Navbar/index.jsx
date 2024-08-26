@@ -11,7 +11,7 @@ const Navbar = () => {
       >
         MyQuran
       </Link>
-      <div className="flex md:mx-52 mx-10 items-center gap-2">
+      <div className="flex md:mx-52 items-center gap-2">
         <ThemesToogle />
         {/* <InputSearch /> */}
       </div>
